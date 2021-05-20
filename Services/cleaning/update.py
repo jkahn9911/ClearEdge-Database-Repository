@@ -7,7 +7,7 @@ sys.path.insert(0, home_dir)
 from util import db, nlp
 
 # Get datetime for SELECT query
-yesterday = date.today() - timedelta(days = 1)
+yesterday = date.today() - timedelta(days = 31)
 yes_str = yesterday.strftime('%Y-%m-%d')
 
 # TODO: change to 'dbo.Case_Detail' for production
