@@ -20,5 +20,5 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: execute py script # run sj-gobierno.py to get the latest data
-        run: python helloWorld.py
         working-directory: Services
+        run: python helloWorld.py
