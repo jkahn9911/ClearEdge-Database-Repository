@@ -4,7 +4,6 @@ name: ServicesWorkflow
 
 # Controls when the action will run. 
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
   schedule:
     - cron: '0 12 * * *'
 
@@ -21,4 +20,4 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: execute py script # run sj-gobierno.py to get the latest data
-        run: python /Services/helloWorld.py
+        run: python helloWorld.py
