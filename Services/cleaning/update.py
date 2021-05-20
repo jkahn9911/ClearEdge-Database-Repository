@@ -11,7 +11,7 @@ yesterday = date.today() - timedelta(days = 31)
 yes_str = yesterday.strftime('%Y-%m-%d')
 
 # TODO: change to 'dbo.Case_Detail' for production
-table = 'import.dbo.Case_Detail'
+table = 'dbo.Case_Detail'
 
 # Open Connection
     # TODO: change to is_prod=True for production
