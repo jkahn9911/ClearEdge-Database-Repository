@@ -15,7 +15,7 @@ table = 'dbo.Case_Detail'
 
 # Open Connection
     # TODO: change to is_prod=True for production
-conn = db.open_conn()
+conn = db.open_conn(is_prod=True)
 
 # SELECT new rows from yesterday
 new_rows = db.get_table_pd(f"SELECT * FROM {table} WHERE Update_Date > '{yes_str}'", conn)
